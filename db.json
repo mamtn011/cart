@@ -14,6 +14,7 @@
       "id": 1,
       "title": "Asus",
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, maxime?",
+      "price": 72100,
       "img": "laptop1.jpg",
       "categoryId": 1
     },
@@ -21,6 +22,7 @@
       "id": 2,
       "title": "Lenevo",
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, maxime?",
+      "price": 82500,
       "img": "laptop2.jpg",
       "categoryId": 1
     },
@@ -28,6 +30,7 @@
       "id": 3,
       "title": "Mouse-1",
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, maxime?",
+      "price": 1750,
       "img": "mouse1.jpg",
       "categoryId": 2
     },
@@ -35,6 +38,7 @@
       "id": 4,
       "title": "Mouse-2",
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, maxime?",
+      "price": 2280,
       "img": "mouse2.jpg",
       "categoryId": 2
     }
