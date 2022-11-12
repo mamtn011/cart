@@ -1,0 +1,156 @@
+body {
+  background-color: #9b4198;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.cart {
+  float: right;
+  color: #f0f8ff;
+  font-size: 30px;
+  position: relative;
+}
+
+.cart-count {
+  border: 2px solid #f0f8ff;
+  border-radius: 50%;
+  padding: 2px;
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+}
+
+.item-name {
+  text-align: center;
+  color: #f0f8ff;
+}
+
+.grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: auto;
+  display: grid;
+}
+
+.content {
+  color: #faebd7;
+  text-align: center;
+  border: 1px solid #faebd7;
+  padding: 10px;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+}
+
+.pages {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.modal {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #0006;
+  padding-bottom: 120px;
+  display: none;
+  position: fixed;
+  top: -100px;
+  left: 0;
+  overflow: auto;
+}
+
+.modal-content {
+  width: 80%;
+  height: auto;
+  min-height: 100px;
+  background-color: #eee;
+  border: 1px solid #888;
+  margin: 15% auto;
+  padding: 20px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.modal-name {
+  padding: 5px;
+  font-weight: 700;
+}
+
+.modal-price {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.modal-dec, .modal-inc {
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.modal-qty {
+  width: 15px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.shop-more {
+  width: 150px;
+  text-align: center;
+  border: 1px solid #000;
+  margin: auto;
+  padding: 5px;
+}
+
+@media screen and (max-width: 670px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: auto;
+    display: grid;
+  }
+
+  .modal {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    margin: auto;
+    display: grid;
+  }
+
+  .modal {
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .modal-content img {
+    width: 200px;
+    height: 266px;
+  }
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
