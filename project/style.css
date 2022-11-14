@@ -1,0 +1,143 @@
+body {
+  background-color: #9b4198;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+.cart {
+  float: right;
+  font-size: 30px;
+  color: aliceblue;
+  position: relative;
+}
+.cart-count {
+  border: 2px solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  padding: 2px;
+  right: 30px;
+  bottom: 10px;
+}
+.item-name {
+  text-align: center;
+  color: aliceblue;
+}
+.grid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.content {
+  padding: 10px;
+  border: solid 1px antiquewhite;
+  color: antiquewhite;
+  text-align: center;
+}
+.img {
+  width: 200px;
+  height: 200px;
+}
+.pages {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: -100px;
+  padding-bottom: 120px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #eee;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: auto;
+  min-height: 100px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-name {
+  padding: 5px;
+  font-weight: 700;
+}
+.modal-price {
+  border: 1px solid black;
+  padding: 5px;
+}
+.modal-dec,
+.modal-inc {
+  font-weight: bolder;
+  padding: 5px;
+  font-size: 20px;
+  /* border: 1px solid black; */
+}
+.modal-qty {
+  width: 15px;
+  padding: 5px;
+  margin: 5px;
+}
+.shop-more {
+  width: 150px;
+  margin: auto;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+@media screen and (max-width: 670px) {
+  .grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .modal {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  .modal {
+    top: 30px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .modal-content img {
+    width: 200px;
+    height: 266px;
+  }
+}

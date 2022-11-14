@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center; color: antiquewhite; font-family: cursive">
+        My Shop
+      </h1>
+      <hr />
+      <div>
+        <select name="" id="items">
+          <option value="All">Category: All</option>
+          <option value="Laptop">Laptop</option>
+          <option value="Mouse">Mouse</option>
+        </select>
+        <span class="cart">
+          <div class="cart-count">0</div>
+          <i class="fa fa-shopping-cart"></i>
+        </span>
+        <h2 class="item-name">All</h2>
+        <div class="grid">
+          <div class="content">
+            <img src="img/laptop1.jpg" class="img" />
+            <h3 class="title">Mouse</h3>
+
+            <p class="product-des">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
+              maxime?
+            </p>
+            <p class="price">70000 BDT</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+          <div class="content">
+            <img src="img/laptop2.jpg" class="img" />
+            <h3 class="title">Laptop</h3>
+            <p class="description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
+              maxime?
+            </p>
+            <p class="price">70000 BDT</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+          <div class="content">
+            <img src="img/mouse1.jpg" class="img" />
+            <h3 class="title">Laptop</h3>
+            <p class="description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
+              maxime?
+            </p>
+            <p class="price">70000 BDT</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="pages">
+        <!-- <button class="first">First</button>
+        <button class="prev">&larr;Prev</button>
+        <button class="next">Next&rarr;</button>
+        <button class="last">Last</button>
+        <br /><br />
+        <button class="all">All</button> -->
+      </div>
+      <br /><br />
+    </div>
+    <div class="popup"></div>
+    <!-- The Modal -->
+    <div id="Modal" class="modal">
+      <div class="modal-content">
+        <span class="close continue-shopping">&times;</span>
+        <div class="cart-products" style="display: grid; row-gap: 3px">
+          <div style="min-width: 200px; margin: auto">
+            <img
+              src="img/laptop1.jpg"
+              width="50"
+              height="50"
+              style="float: left"
+            />
+            <span class="modal-name">Asus:</span>
+            <span class="modal-price">TK: 4000</span>
+            <span class="modal-dec">--</span
+            ><input type="number" class="modal-qty" readonly /><span
+              class="modal-inc"
+              >+</span
+            >
+            <button class="modal-delete">Delete</button>
+          </div>
+          <div style="min-width: 200px; margin: auto">
+            <img
+              src="img/laptop1.jpg"
+              width="50"
+              height="50"
+              style="float: left"
+            />
+            <span class="modal-name">Asus</span>
+            <span class="modal-price">TK: 4000</span>
+            <span class="modal-dec">--</span
+            ><input type="number" class="modal-qty" readonly /><span
+              class="modal-inc"
+              >+</span
+            >
+            <button class="modal-delete">Delete</button>
+          </div>
+        </div>
+        <div class="continue-shopping shop-more">continue-shopping</div>
+      </div>
+    </div>
+    <!--Modal close -->
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
